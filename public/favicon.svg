@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#fdbb2d"/>
+      <stop offset="45%"  stop-color="#b21f1f"/>
+      <stop offset="100%" stop-color="#1a2a6c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#bg)"/>
+  <!-- Outer ring -->
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#fdbb2d" stroke-width="1.5" opacity="0.6"/>
+  <!-- Network nodes -->
+  <circle cx="50" cy="50" r="6" fill="#fdbb2d" filter="url(#glow)"/>
+  <!-- Spokes -->
+  <line x1="50" y1="50" x2="50" y2="18" stroke="#fdbb2d" stroke-width="1.2" opacity="0.7"/>
+  <line x1="50" y1="50" x2="78" y2="32" stroke="#fdbb2d" stroke-width="1.2" opacity="0.7"/>
+  <line x1="50" y1="50" x2="78" y2="68" stroke="#fdbb2d" stroke-width="1.2" opacity="0.7"/>
+  <line x1="50" y1="50" x2="50" y2="82" stroke="#fdbb2d" stroke-width="1.2" opacity="0.7"/>
+  <line x1="50" y1="50" x2="22" y2="68" stroke="#fdbb2d" stroke-width="1.2" opacity="0.7"/>
+  <line x1="50" y1="50" x2="22" y2="32" stroke="#fdbb2d" stroke-width="1.2" opacity="0.7"/>
+  <!-- Outer dots -->
+  <circle cx="50" cy="18" r="3.5" fill="#E8956D"/>
+  <circle cx="78" cy="32" r="3.5" fill="#6DBF8E"/>
+  <circle cx="78" cy="68" r="3.5" fill="#6D9BE8"/>
+  <circle cx="50" cy="82" r="3.5" fill="#C46DE8"/>
+  <circle cx="22" cy="68" r="3.5" fill="#E8D56D"/>
+  <circle cx="22" cy="32" r="3.5" fill="#E86D6D"/>
+</svg>

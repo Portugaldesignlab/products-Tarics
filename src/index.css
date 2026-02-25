@@ -1,0 +1,72 @@
+/* ─── TARIC·NET Global Styles ─── */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #080a12;
+  font-family: 'DM Mono', 'Fira Mono', 'Courier New', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0f1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2840;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2e3f60;
+}
+
+/* Selection */
+::selection {
+  background: #fdbb2d33;
+  color: #fdbb2d;
+}
+
+/* Remove default button styles */
+button {
+  font-family: inherit;
+}
+
+/* Smooth scrolling within panels */
+.panel-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Keyframe animations used in App.jsx */
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);   opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(16px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(253,187,45,.4); }
+  70%  { box-shadow: 0 0 0 12px rgba(253,187,45,0); }
+  100% { box-shadow: 0 0 0 0 rgba(253,187,45,0); }
+}

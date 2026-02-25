@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taric-net.vercel.app/sitemap.xml
